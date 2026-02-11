@@ -27,7 +27,7 @@ export default function App() {
       placeholder='123456'
      keyboardType='numeric'></TextInput>
      <Button
-          title="Press me"
+          title="Registrar"
           color={'green'}
         />
      <Text>Esqueci a senha</Text>
