@@ -41,15 +41,19 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#ffffff',
     alignItems: 'center',
     justifyContent: 'center',
   },
   input: {
+    width: '90%',
+    borderRadius: 50,
+    backgroundColor: '#f6f6f6',
     height: 40,
     margin: 12,
     borderWidth: 1,
     padding: 10,
+    paddingLeft: 12
   },
   logo: {
     width: 120,
