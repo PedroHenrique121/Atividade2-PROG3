@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, TextInput, Image,Button, Alert } from 'react-native';
 
-  function App() {
+  export default function App() {
   return (
     <View style={styles.container}> 
     
@@ -38,13 +38,18 @@ import { StyleSheet, Text, View, TextInput, Image,Button, Alert } from 'react-na
 
     </View>
     </View>
+
+    
   );
 }
 
 
+
+
+
 /* TELA CADSTRO */
 
- export default function Cadastro() {
+  function Cadastro() {
   return (
     <View style={styles.container}> 
     
