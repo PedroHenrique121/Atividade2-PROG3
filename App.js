@@ -41,6 +41,9 @@ import { StyleSheet, Text, View, TextInput, Image,Button, Alert } from 'react-na
   );
 }
 
+
+/* TELA CADSTRO */
+
  export default function Cadastro() {
   return (
     <View style={styles.container}> 
