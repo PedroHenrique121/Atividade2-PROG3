@@ -1,8 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, TextInput, Image,Button } from 'react-native';
+import { StyleSheet, Text, View, TextInput, Image,Button, Alert } from 'react-native';
 
-export default function App() {
+  function App() {
   return (
     <View style={styles.container}> 
     
@@ -27,16 +27,84 @@ export default function App() {
       <TextInput style={styles.input}
       placeholder='123456'
      keyboardType='numeric'></TextInput>
+     <View style={{marginTop: 20, width: 200}}>
      <Button
-          title="Registrar"
+          title="Logar"
           color={'green'}
+          onPress={() => alert("Registrado com sucesso")}
         />
+        </View>
      <Text>Esqueci a senha</Text>
 
     </View>
     </View>
   );
 }
+
+ export default function Cadastro() {
+  return (
+    <View style={styles.container}> 
+    
+
+ 
+      <View style={styles.boxTitle}>
+     <Text style={styles.titulo}>CADASTRO NOVO USUÁRIO</Text>
+   
+
+      <Text style={styles.textTitle}> NOME DE USUÁRIO</Text>
+
+      <TextInput style={styles.input} 
+      placeholder='EX. Maria Ruy'
+     keyboardType='text' ></TextInput>
+      <Text style={styles.textTitle}> EMAIL </Text>
+      <TextInput style={styles.input}
+      placeholder='Email@gmail.com'
+     keyboardType='text'></TextInput>
+     <Text style={styles.textTitle}> SENHA </Text>
+      <TextInput style={styles.input}
+      placeholder='123456789'
+     keyboardType='numeric'></TextInput>
+     
+     <View style={{marginTop: 20, width: 200}}><Button
+          title="Cadastrar-se"
+          color={'green'}
+          onPress={() => alert("Cadastro feito!!")}
+        />
+      </View>
+
+    </View>
+    </View>
+  );
+}
+  function Esquecesenha() {
+  return (
+    <View style={styles.container}> 
+    
+
+ 
+      <View style={styles.boxTitle}>
+     <Text style={styles.titulo}>Esqueceu a senha</Text>
+   
+
+      
+      <Text style={styles.textTitle}> EMAIL </Text>
+      <TextInput style={styles.input}
+      placeholder='Email@gmail.com'
+     keyboardType='text'></TextInput>
+  
+  <View style={{marginTop: 20, width: 200}}>
+     <Button
+          title="Cadastrar-se"
+          color={'green'}
+          onPress={() => Alert("Senha Recuperada ")}
+        />
+     </View>
+
+    </View>
+    </View>
+  );
+}
+
 
 const styles = StyleSheet.create({
   container: {
@@ -46,8 +114,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   input: {
-    width: '90%',
-    borderRadius: 50,
+    width: '200',
+    
     backgroundColor: '#D3D3D3',
     height: 40,
     margin: 12,
@@ -70,7 +138,18 @@ const styles = StyleSheet.create({
     color: 'red',
     fontSize: 24,
     fontWeight: "bold"
+  },
+  titulo: {
+    marginBottom: 180,
+     color: 'red',
+    fontSize: 24,
+    fontWeight: "bold"
+  },
+  button: {
+
   }
+  
+  
   
   
 });
